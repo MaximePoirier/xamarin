@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<mvvm:BaseContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:mvvm="clr-namespace:Storm.Mvvm.Forms;assembly=Storm.Mvvm.Forms"
+             x:Class="AppFourplaces.Views.HomePage">
+    
+    <StackLayout HorizontalOptions="FillAndExpand"
+               VerticalOptions="Start"
+               BackgroundColor="Black"               
+                 >
+        <Label Text="Accueil" 
+                   TextColor="White"
+                   FontSize="16"
+                   HorizontalOptions="Center"
+                   Margin="4,6,4,6"
+                   />
+        <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand">
+            <Button Command="{Binding GoToPlaces}"
+                        Text="Voir lieux proches"/>
+            <Button Command="{Binding Connexion}"
+                        Text="Se Connecter"/>
+            <Button Command="{Binding GoToProfile}"
+                        Text="Voir Profile"/>
+            <Button Command="{Binding GoToRegister}"
+                        Text="Créer un compte"/>
+        </StackLayout>
+    </StackLayout>
+
+</mvvm:BaseContentPage>

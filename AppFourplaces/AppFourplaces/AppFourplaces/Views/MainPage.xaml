@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<mvvm:BaseContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:mvvm="clr-namespace:Storm.Mvvm.Forms;assembly=Storm.Mvvm.Forms"
+             xmlns:models="clr-namespace:AppFourplaces.Models"
+             xmlns:local="clr-namespace:AppFourplaces"
+             xmlns:vm="clr-namespace:AppFourplaces.ViewModels"
+                      xmlns:dtos="clr-namespace:AppFourplaces.Dtos"
+                      x:Class="AppFourplaces.MainPage">
+
+    <StackLayout Orientation="Vertical">
+
+        <StackLayout HorizontalOptions="FillAndExpand"
+               VerticalOptions="Start"
+               BackgroundColor="Black"               
+                 >
+            <Label Text="Lieux proche :" 
+                   TextColor="White"
+                   FontSize="16"
+                   HorizontalOptions="Center"
+                   Margin="4,6,4,6"
+                   />
+        </StackLayout>
+
+        <Button Command="{Binding AddPlaces}"
+                        Text="Ajouter un lieu"/>
+
+
+
+        <ListView x:Name="PlacesList" HasUnevenRows="True" SelectionMode="Single" ItemSelected="GoToThePlace" ItemsSource="{Binding Places}">
+            <ListView.ItemTemplate>
+                <DataTemplate x:DataType="dtos:PlaceItemSummary">
+                    <ViewCell>
+                        <Frame CornerRadius="4"
+                               HasShadow="True"
+                               Margin="4,4,4,4"
+                               Padding="8,4,8,4"
+                               HorizontalOptions="FillAndExpand"
+                               VerticalOptions="Start"
+                               >
+                            <StackLayout HorizontalOptions="FillAndExpand"
+                                         VerticalOptions="Start"
+                                         Orientation="Horizontal">
+
+                                <StackLayout Orientation="Vertical"
+                                             Grid.Column="0"
+                                             HorizontalOptions="FillAndExpand"
+                                             VerticalOptions="Center"
+                                             >
+                                    <Image Source="{Binding ImageId,StringFormat='https://td-api.julienmialon.com/images/{0}'}"
+                                       WidthRequest="40"
+                                       HeightRequest="40"
+                                    />
+                                    
+                                </StackLayout>
+
+                                <StackLayout Orientation="Vertical"
+                                             Grid.Column="1"
+                                             HorizontalOptions="FillAndExpand"
+                                             VerticalOptions="Center"
+                                             >
+                                    <Label Text="{Binding Title}" 
+                                           TextColor="Black" 
+                                           LineBreakMode="WordWrap" 
+                                           FontSize="10"
+                                           />
+                                    <Label Text="{Binding Description}" 
+                                           FontSize="8"
+                                           TextColor="Gray"
+                                           />
+                                </StackLayout>
+                            </StackLayout>
+                        </Frame>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+
+</mvvm:BaseContentPage>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<mvvm:BaseContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:mvvm="clr-namespace:Storm.Mvvm.Forms;assembly=Storm.Mvvm.Forms"
+             x:Class="AppFourplaces.Views.AddPlacePage">
+
+    <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand">
+        <StackLayout HorizontalOptions="FillAndExpand"
+               VerticalOptions="Start"
+               BackgroundColor="Black"               
+                 >
+            <Label Text="Nouveau lieu" 
+                   TextColor="White"
+                   FontSize="16"
+                   HorizontalOptions="Center"
+                   Margin="4,6,4,6"
+                   />
+        </StackLayout>
+        <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand">
+            <Label Text="{Binding Info}"></Label>
+            <Entry Placeholder="Titre" Text="{Binding Title}"/>
+            <Entry Placeholder="Description" Text="{Binding Description}"/>
+            <Entry Placeholder="Latitude" Text="{Binding Latitude}"/>
+            <Entry Placeholder="Longitude" Text="{Binding Longitude}"/>
+            <Button Command="{Binding SendPlace}"
+                        Text="Enregistrer lieu"/>
+        </StackLayout>
+    </StackLayout>
+
+</mvvm:BaseContentPage>

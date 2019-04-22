@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<mvvm:BaseContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:mvvm="clr-namespace:Storm.Mvvm.Forms;assembly=Storm.Mvvm.Forms"
+             xmlns:models="clr-namespace:AppFourplaces.Models"
+             xmlns:local="clr-namespace:AppFourplaces"
+             xmlns:vm="clr-namespace:AppFourplaces.ViewModels"
+                      xmlns:dtos="clr-namespace:AppFourplaces.Dtos"
+                      x:Class="AppFourplaces.Views.RegisterPage">
+
+    <StackLayout Orientation="Vertical">
+
+        <StackLayout HorizontalOptions="FillAndExpand"
+               VerticalOptions="Start"
+               BackgroundColor="Black"               
+                 >
+            <Label Text="Lieux proche :" 
+                   TextColor="White"
+                   FontSize="16"
+                   HorizontalOptions="Center"
+                   Margin="4,6,4,6"
+                   />
+        </StackLayout>
+
+        <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand">
+            <Label Text="{Binding Token}"></Label>
+            <Entry Placeholder="Email" Text="{Binding Email}"/>
+            <Entry Placeholder="Prenom" Text="{Binding Prenom}"/>
+            <Entry Placeholder="Nom" Text="{Binding Nom}"/>
+            <Entry Placeholder="Mot de passe" Text="{Binding Password}" IsPassword="True"/>
+            <Button Command="{Binding SendRegister}"
+                        Text="Enregistrer"/>
+        </StackLayout>
+
+
+    </StackLayout>
+
+</mvvm:BaseContentPage>

@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<mvvm:BaseContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:mvvm="clr-namespace:Storm.Mvvm.Forms;assembly=Storm.Mvvm.Forms"
+                      xmlns:dtos="clr-namespace:AppFourplaces.Dtos"
+                      xmlns:local="clr-namespace:AppFourplaces.Models"
+                      x:Class="AppFourplaces.PlacePage">
+
+    <StackLayout VerticalOptions="FillAndExpand">
+        <ScrollView VerticalOptions="FillAndExpand">
+            <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand">
+                <StackLayout Orientation="Vertical"
+                     Grid.Column="0"
+                     HorizontalOptions="Center"
+                     VerticalOptions="FillAndExpand"
+                                             >
+                    <Label Text="{Binding Place.Title}"></Label>
+                </StackLayout>
+
+                <local:BindableMap MapPosition="{Binding MyPosition}" MapPins="{Binding PinCollection}" WidthRequest="400" HeightRequest="300"/>
+
+                <Image Source="{Binding Place.ImageId ,StringFormat='https://td-api.julienmialon.com/images/{0}'}" />
+                <Label Text="{Binding Place.Description}"></Label>
+                <Label Text="{Binding Info}"/>
+                <Entry Placeholder="Auteur" Text="{Binding Author}"/>
+                <Entry Placeholder="Commentaire" Text="{Binding Comment}"/>
+
+                <Button Command="{Binding SendComment}"
+                        Text="Envoyer Commentaire"/>
+            </StackLayout>
+        </ScrollView>
+
+        <ListView x:Name="CommentsList" HasUnevenRows="True" SelectionMode="None" ItemsSource="{Binding Place.Comments}">
+            <ListView.ItemTemplate>
+                <DataTemplate x:DataType="dtos:CommentItem">
+                    <ViewCell>
+                        <Frame CornerRadius="4"
+                               HasShadow="True"
+                               Margin="4,4,4,4"
+                               Padding="8,4,8,4"
+                               HorizontalOptions="FillAndExpand"
+                               VerticalOptions="Start"
+                               >
+                            <StackLayout HorizontalOptions="FillAndExpand"
+                                         VerticalOptions="Start"
+                                         Orientation="Horizontal">
+
+
+                                <StackLayout Orientation="Horizontal"
+                                             HorizontalOptions="CenterAndExpand"
+                                             VerticalOptions="Center"
+                                             >
+                                    
+                                    <Label Text="{Binding Text}" 
+                                           FontSize="8"
+                                           TextColor="Gray"
+                                           />
+                                </StackLayout>
+                                <StackLayout Orientation="Vertical"
+                                             Grid.Column="0"
+                                             HorizontalOptions="FillAndExpand"
+                                             VerticalOptions="Center"
+                                             >
+                                    <Label Text="{Binding AuthorName}"
+                                          FontSize="6"
+                                          TextColor="Black"
+                                          />
+
+                                </StackLayout>
+                                <StackLayout Orientation="Vertical"
+                                             Grid.Column="1"
+                                             HorizontalOptions="FillAndExpand"
+                                             VerticalOptions="Center">
+                                    <Label Text="{Binding Date}"
+                                           FontSize="6"
+                                           TextColor="Black"
+                                           />
+                                </StackLayout>
+                            </StackLayout>
+                        </Frame>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+
+</mvvm:BaseContentPage>
