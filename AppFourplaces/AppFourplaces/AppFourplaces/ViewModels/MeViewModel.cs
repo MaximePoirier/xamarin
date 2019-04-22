@@ -37,6 +37,7 @@ namespace AppFourplaces.ViewModels
 		public MeViewModel ()
 		{
             this.ModifyMe = new Command(async () => await NavigationService.PushAsync(new ModifyMePage()));
+            this.ModifyPassword = new Command(async () => await NavigationService.PushAsync(new ModifyPasswordPage()));
 		}
 
         public override async Task OnResume()

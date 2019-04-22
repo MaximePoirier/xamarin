@@ -679,11 +679,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Maxou\\Documents\\Xamarin\\AppFourplaces\\AppFourplaces\\AppFourplaces\\AppFourplaces.csproj",
+      "projectUniqueName": "C:\\Users\\Maxou\\Documents\\GitHub\\xamarin\\AppFourplaces\\AppFourplaces\\AppFourplaces\\AppFourplaces.csproj",
       "projectName": "AppFourplaces",
-      "projectPath": "C:\\Users\\Maxou\\Documents\\Xamarin\\AppFourplaces\\AppFourplaces\\AppFourplaces\\AppFourplaces.csproj",
+      "projectPath": "C:\\Users\\Maxou\\Documents\\GitHub\\xamarin\\AppFourplaces\\AppFourplaces\\AppFourplaces\\AppFourplaces.csproj",
       "packagesPath": "C:\\Users\\Maxou\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Maxou\\Documents\\Xamarin\\AppFourplaces\\AppFourplaces\\AppFourplaces\\obj\\",
+      "outputPath": "C:\\Users\\Maxou\\Documents\\GitHub\\xamarin\\AppFourplaces\\AppFourplaces\\AppFourplaces\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

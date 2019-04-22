@@ -1511,11 +1511,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Maxou\\Documents\\Xamarin\\AppFourplaces\\AppFourplaces\\AppFourplaces.Android\\AppFourplaces.Android.csproj",
+      "projectUniqueName": "C:\\Users\\Maxou\\Documents\\GitHub\\xamarin\\AppFourplaces\\AppFourplaces\\AppFourplaces.Android\\AppFourplaces.Android.csproj",
       "projectName": "AppFourplaces.Android",
-      "projectPath": "C:\\Users\\Maxou\\Documents\\Xamarin\\AppFourplaces\\AppFourplaces\\AppFourplaces.Android\\AppFourplaces.Android.csproj",
+      "projectPath": "C:\\Users\\Maxou\\Documents\\GitHub\\xamarin\\AppFourplaces\\AppFourplaces\\AppFourplaces.Android\\AppFourplaces.Android.csproj",
       "packagesPath": "C:\\Users\\Maxou\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Maxou\\Documents\\Xamarin\\AppFourplaces\\AppFourplaces\\AppFourplaces.Android\\obj\\",
+      "outputPath": "C:\\Users\\Maxou\\Documents\\GitHub\\xamarin\\AppFourplaces\\AppFourplaces\\AppFourplaces.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -1532,8 +1532,8 @@
       "frameworks": {
         "monoandroid81": {
           "projectReferences": {
-            "C:\\Users\\Maxou\\Documents\\Xamarin\\AppFourplaces\\AppFourplaces\\AppFourplaces\\AppFourplaces.csproj": {
-              "projectPath": "C:\\Users\\Maxou\\Documents\\Xamarin\\AppFourplaces\\AppFourplaces\\AppFourplaces\\AppFourplaces.csproj"
+            "C:\\Users\\Maxou\\Documents\\GitHub\\xamarin\\AppFourplaces\\AppFourplaces\\AppFourplaces\\AppFourplaces.csproj": {
+              "projectPath": "C:\\Users\\Maxou\\Documents\\GitHub\\xamarin\\AppFourplaces\\AppFourplaces\\AppFourplaces\\AppFourplaces.csproj"
             }
           }
         }
