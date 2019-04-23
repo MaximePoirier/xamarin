@@ -14,7 +14,6 @@ namespace AppFourplaces
         public App():base(()=>new HomePage())
         {
             InitializeComponent();
-
         }
     }
 }

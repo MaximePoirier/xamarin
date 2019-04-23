@@ -28,6 +28,8 @@
             <Entry Placeholder="Mot de passe" Text="{Binding Password}" IsPassword="True"/>
             <Button Command="{Binding SendLogin}"
                         Text="Connexion"/>
+            <Button Command="{Binding GoToRegister}"
+                        Text="Créer un compte"/>
         </StackLayout>
 
 

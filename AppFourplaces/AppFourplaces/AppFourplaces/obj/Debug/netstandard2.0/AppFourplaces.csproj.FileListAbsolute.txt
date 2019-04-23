@@ -33,7 +33,7 @@ C:\Users\Maxou\Documents\GitHub\xamarin\AppFourplaces\AppFourplaces\AppFourplace
 C:\Users\Maxou\Documents\GitHub\xamarin\AppFourplaces\AppFourplaces\AppFourplaces\obj\Debug\netstandard2.0\AppFourplaces.csproj.CoreCompileInputs.cache
 C:\Users\Maxou\Documents\GitHub\xamarin\AppFourplaces\AppFourplaces\AppFourplaces\obj\Debug\netstandard2.0\AppFourplaces.AssemblyInfoInputs.cache
 C:\Users\Maxou\Documents\GitHub\xamarin\AppFourplaces\AppFourplaces\AppFourplaces\obj\Debug\netstandard2.0\AppFourplaces.AssemblyInfo.cs
-C:\Users\Maxou\Documents\GitHub\xamarin\AppFourplaces\AppFourplaces\AppFourplaces\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Users\Maxou\Documents\GitHub\xamarin\AppFourplaces\AppFourplaces\AppFourplaces\obj\Debug\netstandard2.0\AppFourplaces.dll
 C:\Users\Maxou\Documents\GitHub\xamarin\AppFourplaces\AppFourplaces\AppFourplaces\obj\Debug\netstandard2.0\AppFourplaces.pdb
 C:\Users\Maxou\Documents\GitHub\xamarin\AppFourplaces\AppFourplaces\AppFourplaces\obj\Debug\netstandard2.0\Views\ModifyPasswordPage.xaml.g.cs
+C:\Users\Maxou\Documents\GitHub\xamarin\AppFourplaces\AppFourplaces\AppFourplaces\obj\Debug\netstandard2.0\XamlC.stamp

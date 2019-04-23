@@ -16,15 +16,22 @@
                    Margin="4,6,4,6"
                    />
         </StackLayout>
-        <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand">
-            <Label Text="{Binding Info}"></Label>
-            <Entry Placeholder="Titre" Text="{Binding Title}"/>
-            <Entry Placeholder="Description" Text="{Binding Description}"/>
-            <Entry Placeholder="Latitude" Text="{Binding Latitude}"/>
-            <Entry Placeholder="Longitude" Text="{Binding Longitude}"/>
-            <Button Command="{Binding SendPlace}"
+        <ScrollView Orientation="Vertical" VerticalOptions="FillAndExpand">
+            <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand">
+                <Label Text="{Binding Info}"></Label>
+                <Entry Placeholder="Titre" Text="{Binding Title}"/>
+                <Entry Placeholder="Description" Text="{Binding Description}"/>
+                <Entry Placeholder="Latitude" Text="{Binding Latitude}"/>
+                <Entry Placeholder="Longitude" Text="{Binding Longitude}"/>
+                <Button Command="{Binding Pos}"
+                        Text="Position actuel"/>
+                <Button Command="{Binding PickPicture}"
+                    Text="Prendre une photo depuis la galerie"/>
+                <Image Source="{Binding Image1}" WidthRequest="100" HeightRequest="100"/>
+                <Button Command="{Binding SendPlace}"
                         Text="Enregistrer lieu"/>
         </StackLayout>
+        </ScrollView>
     </StackLayout>
 
 </mvvm:BaseContentPage>

@@ -1,4 +1,5 @@
 ﻿using AppFourplaces.Dtos;
+using AppFourplaces.Views;
 using Newtonsoft.Json;
 using Storm.Mvvm;
 using System;
@@ -20,6 +21,7 @@ namespace AppFourplaces.ViewModels
         private string _token;
 
         public ICommand SendLogin { get; set; }
+        public ICommand GoToRegister { get; set; }
 
         public string Email
         {
@@ -42,7 +44,8 @@ namespace AppFourplaces.ViewModels
         public LoginViewModel ()
 		{
             this.SendLogin = new Command(async () => await Connexion());
-		}
+            this.GoToRegister = new Command(async () => await NavigationService.PushAsync(new RegisterPage()));
+        }
 
         private async Task Connexion()
         {

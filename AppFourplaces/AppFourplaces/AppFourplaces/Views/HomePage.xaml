@@ -21,8 +21,6 @@
                         Text="Se Connecter"/>
             <Button Command="{Binding GoToProfile}"
                         Text="Voir Profile"/>
-            <Button Command="{Binding GoToRegister}"
-                        Text="Créer un compte"/>
         </StackLayout>
     </StackLayout>
 
